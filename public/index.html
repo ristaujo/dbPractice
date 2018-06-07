@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="#!/dogs">Dogs</a>
+    <a href="#!/owners">Owners</a>
+    <a href="#!/matches">Matches</a>
+  </nav>
+ 
+  <ng-view></ng-view>
+
+  <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+  <script src="js/module/module.js"></script>
+  <script src="js/config/config.js"></script>
+  <script src="js/components/owners.js"></script>
+  <script src="js/components/dogs.js"></script>
+  <script src="js/services/owner-service.js"></script>
+  <script src="js/services/dog-service.js"></script>
+  <script src="js/services/match-service.js"></script>
+</body>
+</html>
